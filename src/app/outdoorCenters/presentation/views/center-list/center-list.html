@@ -1,0 +1,15 @@
+<h1 class="title">Center</h1>
+@if (store.loading()) { <mat-spinner/> }
+@if (store.error()) { <mat-error>{{ store.error() }}</mat-error> }
+<table mat-table [dataSource]="dataSource()" matSort>
+  <ng-container matColumnDef="id"><th mat-header-cell *matHeaderCellDef mat-sort-header>ID</th><td mat-cell *matCellDef="let center">{{ center.id }}</td></ng-container>
+  <ng-container matColumnDef="name"><th mat-header-cell *matHeaderCellDef mat-sort-header>Title</th><td mat-cell *matCellDef="let center">{{ center.title }}</td></ng-container>
+  <ng-container matColumnDef="latitude"><th mat-header-cell *matHeaderCellDef mat-sort-header>Title</th><td mat-cell *matCellDef="let center">{{ center.latitude }}</td></ng-container>
+  <ng-container matColumnDef="longitude"><th mat-header-cell *matHeaderCellDef mat-sort-header>Title</th><td mat-cell *matCellDef="let center">{{ center.longitude }}</td></ng-container>
+  <ng-container matColumnDef="activityType"><th mat-header-cell *matHeaderCellDef mat-sort-header>Description</th><td mat-cell *matCellDef="let center">{{ center.description }}</td></ng-container>
+  <ng-container matColumnDef="capacity"><th mat-header-cell *matHeaderCellDef mat-sort-header>Category</th><td mat-cell *matCellDef="let center">{{ center.category?.name ?? '-' }}</td></ng-container>
+  <ng-container matColumnDef="actions"><th mat-header-cell *matHeaderCellDef>Actions</th><td mat-cell *matCellDef="let center"><button mat-icon-button aria-label="Edit center" (click)="editCenter(center.id)"><mat-icon>edit</mat-icon></button><button mat-icon-button aria-label="Delete reservation" (click)="deleteCenter(center.id)"><mat-icon>delete</mat-icon></button></td></ng-container>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr><tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+<mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]"/>
+<button mat-raised-button (click)="navigateToNew()">New reservation</button>
