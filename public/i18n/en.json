@@ -1,0 +1,21 @@
+{
+  "app": {
+    "title": "TrailGo Outdoor Centers"
+  },
+  "sources": {
+    "title": "Red de centro de actividades"
+  },
+  "articles": {
+    "title": "Actividades principales"
+  },
+  "article": {
+    "read-more": "Ver más",
+    "published-at": "Publicado el",
+    "about-source": "Acerca de {{sourceName}}",
+    "by-author": "Por {{authorName}}"
+  },
+  "source": {
+    "close": "Cerrar",
+    "visit-website": "Visitar Sitio Web"
+  }
+}

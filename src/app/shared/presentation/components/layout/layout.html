@@ -5,7 +5,7 @@
         <mat-icon>menu</mat-icon>
       </button>
       @if (!collapsed()) {
-        <span>Learning Center</span>
+        <span>TrailGo Outdoor Centers</span>
       }
     </div>
 
@@ -17,6 +17,17 @@
             <span matListItemTitle>{{ option.label }}</span>
           }
         </a>
+      }
+    </mat-nav-list>
+    <mat-nav-list>
+      @for (option of options; track option.link) {
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+          <mat-button-toggle value="EN">Bold</mat-button-toggle>
+          <mat-button-toggle value="ES">Italic</mat-button-toggle>
+        </mat-button-toggle-group>
+          @if (!collapsed()) {
+            <span matListItemTitle>{{ option.label }}</span>
+          }
       }
     </mat-nav-list>
   </mat-sidenav>

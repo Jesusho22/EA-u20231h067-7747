@@ -5,10 +5,11 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {FooterContent} from '../footer-content/footer-content';
+import {MatButtonToggle, MatButtonToggleGroup} from '@angular/material/button-toggle';
 
 @Component({
   selector: 'app-layout',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, MatSidenavModule, MatButtonModule, MatIconModule, MatListModule, FooterContent],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, MatSidenavModule, MatButtonModule, MatIconModule, MatListModule, FooterContent, MatButtonToggleGroup, MatButtonToggle],
   templateUrl: './layout.html',
   styleUrl: './layout.css'
 })
@@ -17,8 +18,8 @@ export class Layout {
   readonly options = [
     {link: '/home', label: 'Home', icon: 'home'},
     {link: '/about', label: 'About', icon: 'info'},
-    {link: '/learning/categories', label: 'Categories', icon: 'category'},
-    {link: '/learning/courses', label: 'Courses', icon: 'school'}
+    {link: '/reservations/outdoor-centers', label: 'Centers', icon: 'types'},
+    {link: '/reservations/reservations', label: 'Reserves', icon: 'case'}
   ];
 
   toggleMenu(): void {

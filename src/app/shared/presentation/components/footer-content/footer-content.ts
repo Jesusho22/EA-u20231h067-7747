@@ -1,8 +1,5 @@
 import {Component} from '@angular/core';
 
-/**
- * Displays localized footer text.
- */
 @Component({
   selector: 'app-footer-content',
   imports: [
