@@ -4,7 +4,7 @@ export const environment = {
   platformProviderCategoriesEndpointPath: '/outdoor-centers',
   platformProviderCoursesEndpointPath: '/reservations',
   platformProviderSignInEndpointPath: '/authentication/sign-in',
-  logoProviderApiBaseUrl: 'https://img.logo.dev.com/'
+  logoProviderApiBaseUrl: 'https://img.logo.dev/trailgox.com?token=pk_B0LVXsxyQC-RO0GgsP_Kyg&format=webp&retina=true'
 };
 //(https://open-meteo.com/
 //https://api.open-
