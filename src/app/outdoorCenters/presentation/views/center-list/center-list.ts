@@ -73,7 +73,7 @@ export class CenterList {
   }
 
   deleteCenter(id: number) {
-    this.store.deleteCourse(id);
+    this.store.deleteCenter(id);
   }
 
   navigateToNew() {
