@@ -1,0 +1,65 @@
+{
+  "outdoor-centers": [
+    {
+      "id": 1,
+      "name": "TrailGo Miraflores Hiking Hub",
+      "activityType": "hiking",
+      "capacity": 24,
+      "latitude": -12.1211,
+      "longitude": -77.0306
+    },
+    {
+      "id": 2,
+      "name": "TrailGo San Borja Running Hub",
+      "activityType": "running",
+      "capacity": 32,
+      "latitude": -12.1087,
+      "longitude": -76.9987
+    },
+    {
+      "id": 3,
+      "name": "TrailGo Barranco Cycling Hub",
+      "activityType": "cycling",
+      "capacity": 18,
+      "latitude": -12.1495,
+      "longitude": -77.0217
+    },
+    {
+      "id": 4,
+      "name": "TrailGo Chorrillos Trekking Hub",
+      "activityType": "trekking",
+      "capacity": 20,
+      "latitude": -12.1745,
+      "longitude": -77.0247
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "outdoorCenterId": 1,
+      "activityType": "hiking",
+      "participantName": "Ana Torres",
+      "participants": 5,
+      "weatherTemperature": 21.2,
+      "reservedAt": "2026-10-12T09:15:00"
+    },
+    {
+      "id": 2,
+      "outdoorCenterId": 3,
+      "activityType": "cycling",
+      "participantName": "Luis Medina",
+      "participants": 4,
+      "weatherTemperature": 20.8,
+      "reservedAt": "2026-10-12T10:00:00"
+    },
+    {
+      "id": 3,
+      "outdoorCenterId": 1,
+      "activityType": "hiking",
+      "participantName": "Carla Rojas",
+      "participants": 3,
+      "weatherTemperature": 22.1,
+      "reservedAt": "2026-10-12T11:30:00"
+    }
+  ]
+}
